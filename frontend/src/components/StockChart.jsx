@@ -24,7 +24,7 @@ Chart.register(
 export default function StockChart({ symbol }) {
   const [data, setData] = useState(null);
   const [prediction, setPrediction] = useState(null);
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+  const API_URL = "https://stock-dashboard-backend-zbrc.onrender.com";
 
   useEffect(() => {
     setData(null);
