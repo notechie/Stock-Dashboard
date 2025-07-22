@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [companies, setCompanies] = useState([]);
   const [selected, setSelected] = useState(null);
-  const API_URL = import.meta.env.API_URL || 'http://localhost:5000';
+  const API_URL = 'https://stock-dashboard-backend-zbrc.onrender.com/';
 
   useEffect(() => {
     fetch(`${API_URL}/api/companies`)
